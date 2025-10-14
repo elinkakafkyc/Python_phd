@@ -11,7 +11,7 @@ import streamlit as st
 st.set_page_config(page_title="TRC.py",
                    page_icon="🛠️",
                     layout="wide")
-st.title("HPC skořepina + RAC jádro" \
+st.title(
 "Demo aplikace")
 st.subheader("Ing. Eliška Kafková")
 st.caption("Predikce pevnosti v ohybu i tlaku z reálných bodů (8 a 18 mm).\\n"
