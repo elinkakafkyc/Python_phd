@@ -8,7 +8,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-st.set_page_config(page_title="HPC shell + RAC core — mini app", layout="wide")
+st.set_page_config(page_title="TRC.py",
+                   page_icon="🛠️",
+                    layout="wide")
 st.title("HPC skořepina + RAC jádro" \
 "Demo aplikace")
 st.subheader("Ing. Eliška Kafková")
@@ -140,6 +142,7 @@ with col_right:
 # růžová + fialová paleta
     ax2.bar(x - width/2, [bend_val_rc], width, label="Ohyb", color="#f4a2c3", alpha=0.9)
     ax2.bar(x + width/2, [comp_val_rc], width, label="Tlak", color="#c89fca", alpha=0.9)
+    
 
     ax2.set_xticks(x)
     ax2.set_xticklabels(labels_rc)
