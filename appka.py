@@ -14,9 +14,8 @@ st.set_page_config(page_title="TRC.py",
 st.title(
 "Demo aplikace")
 st.subheader("Ing. Eliška Kafková")
-st.caption("Predikce pevnosti v ohybu i tlaku z reálných bodů (8 a 18 mm).\\n"
-           "Zobrazení: vlevo Plain/TRC, vpravo referenční ŽB jako **dutý NAC panel (125 MPa krychlová pevnost)**.\\n"
-           "Rozměry uvažovaných prvků: **sloupky 100×100×300 mm**.")
+st.caption("DISCLAIMER:" \
+"Aktuálně je aplikace ve formě rozpracovanosti a nelze ji brát jako funkční.")
 
 # ========================
 # Reálná data (Plain & TRC, Hollow/Filled, 8 a 18 mm)
