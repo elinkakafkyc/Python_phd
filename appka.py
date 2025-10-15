@@ -18,11 +18,11 @@ st.caption("DISCLAIMER:"    \
 # ========================
 CUSTOM_DATA_BEND = {
     "Plain (bez výztuže)": {"Hollow": [(8, 11.42), (18, 12.91)], "Filled": [(8, 17.72), (18, 20.93)]},
-    "TRC (uhlíková mříž)": {"Hollow": [(8, 23.69), (18, 43.09)], "Filled": [(8, 23.82), (18, 47.87)]},
+    "TRC (uhlíková výztuž)": {"Hollow": [(8, 23.69), (18, 43.09)], "Filled": [(8, 23.82), (18, 47.87)]},
 }
 CUSTOM_DATA_COMP = {
     "Plain (bez výztuže)": {"Hollow": [(8, 47.93), (18, 64.63)], "Filled": [(8, 24.62), (18, 53.95)]},
-    "TRC (uhlíková mříž)": {"Hollow": [(8, 59.45), (18, 74.49)], "Filled": [(8, 35.41), (18, 56.87)]},
+    "TRC (uhlíková výztuž)": {"Hollow": [(8, 59.45), (18, 74.49)], "Filled": [(8, 35.41), (18, 56.87)]},
 }
 
 # ========================
@@ -51,7 +51,7 @@ with st.sidebar:
     st.header("Nastavení")
     system = st.selectbox("Systém vlevo", SYSTEMS_LEFT, index=1)
     thickness = st.slider("Tloušťka [mm]", min_value=8, max_value=30, value=13, step=1)
-    filled = st.toggle("Vyplněno RAC jádrem", value=True, help="Pro Plain/TRC. U ŽB referenčního panelu ignorováno.")
+    filled = st.toggle("Vyplněno RAC jádrem", value=True)
 
 # ========================
 # Fit funkce 
