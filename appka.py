@@ -11,8 +11,7 @@ st.set_page_config(page_title="TRC.py",
 st.title(
 "Demo aplikace")
 st.subheader("Ing. Eliška Kafková")
-st.caption("DISCLAIMER:"    \   
-"Aktuálně je aplikace ve formě rozpracovanosti a nelze ji brát jako funkční.")
+st.caption("DISCLAIMER: " "Aktuálně je aplikace ve formě rozpracovanosti a nelze ji brát jako funkční.")
 
 # ========================
 # Reálná data (Plain & TRC, Hollow/Filled, 8 a 18 mm)
