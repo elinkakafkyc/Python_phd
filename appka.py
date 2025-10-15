@@ -1,8 +1,4 @@
 
-# Add an interactive table under the right (ŽB) graph with the reference values for the hollow NAC panel.
-# Saves to /mnt/data/streamlit_app.py
-
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -14,7 +10,7 @@ st.set_page_config(page_title="TRC.py",
 st.title(
 "Demo aplikace")
 st.subheader("Ing. Eliška Kafková")
-st.caption("DISCLAIMER:" \
+st.caption("DISCLAIMER:"    \
 "Aktuálně je aplikace ve formě rozpracovanosti a nelze ji brát jako funkční.")
 
 # ========================
@@ -58,7 +54,7 @@ with st.sidebar:
     filled = st.toggle("Vyplněno RAC jádrem", value=True, help="Pro Plain/TRC. U ŽB referenčního panelu ignorováno.")
 
 # ========================
-# Fit funkce (auto-polynom)
+# Fit funkce 
 # ========================
 def auto_polyfit(x, y):
     n = len(x)
@@ -151,7 +147,7 @@ with col_right:
     st.pyplot(fig2, clear_figure=True)
 
 
-    # Interactive table with the reference RC values (fixed 8 mm & 18 mm)
+    
     df_rc = pd.DataFrame({
         "Tloušťka [mm]": [8, 18],
         "Ohyb [MPa]": [DEFAULT_BEND[SYSTEM_RC]["Hollow"][0][1], DEFAULT_BEND[SYSTEM_RC]["Hollow"][1][1]],
