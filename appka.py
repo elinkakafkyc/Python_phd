@@ -1,4 +1,5 @@
 
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -10,7 +11,7 @@ st.set_page_config(page_title="TRC.py",
 st.title(
 "Demo aplikace")
 st.subheader("Ing. Eliška Kafková")
-st.caption("DISCLAIMER:"    \
+st.caption("DISCLAIMER:"    \   
 "Aktuálně je aplikace ve formě rozpracovanosti a nelze ji brát jako funkční.")
 
 # ========================
@@ -18,11 +19,11 @@ st.caption("DISCLAIMER:"    \
 # ========================
 CUSTOM_DATA_BEND = {
     "Plain (bez výztuže)": {"Hollow": [(8, 11.42), (18, 12.91)], "Filled": [(8, 17.72), (18, 20.93)]},
-    "TRC (uhlíková výztuž)": {"Hollow": [(8, 23.69), (18, 43.09)], "Filled": [(8, 23.82), (18, 47.87)]},
+    "TRC (uhlíková mříž)": {"Hollow": [(8, 23.69), (18, 43.09)], "Filled": [(8, 23.82), (18, 47.87)]},
 }
 CUSTOM_DATA_COMP = {
     "Plain (bez výztuže)": {"Hollow": [(8, 47.93), (18, 64.63)], "Filled": [(8, 24.62), (18, 53.95)]},
-    "TRC (uhlíková )": {"Hollow": [(8, 59.45), (18, 74.49)], "Filled": [(8, 35.41), (18, 56.87)]},
+    "TRC (uhlíková mříž)": {"Hollow": [(8, 59.45), (18, 74.49)], "Filled": [(8, 35.41), (18, 56.87)]},
 }
 
 # ========================
